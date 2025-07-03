@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Divya Garapati</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Full-page layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make main content take all available space */
+main, .hero {
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+
+/* Header and Navigation */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4CAF50;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  background: linear-gradient(to right,#200cb9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: logoFade 1.5s ease-in-out;
+}
+
+.logo span {
+  color: #1B5E20;
+  font-style: italic;
+  font-weight: 900;
+}
+
+@keyframes logoFade {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+/* Main Sections */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+.hero {
+  min-height: 100vh; /* 100% of viewport height */
+}
+
+.hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #2e7d32;
+      margin-bottom: 10px;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .hero .typing {
+      color: #388e3c;
+      font-size: 22px;
+      font-weight: bold;
+      height: 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #388e3c;
+      animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 20px;
+      max-width: 600px;
+      color: #333;
+    }
+
+    .hero a.button {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .hero a.button:hover {
+      background-color: #388e3c;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0 }
+      to { transform: translateY(0); opacity: 1 }
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">DIV<span>YA</span></div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="cat.jpg" alt="Divya Garapati" />
+    <h1>Hello, I'm Divya 👋</h1>
+    <div class="typing">Web Developer | UI/UX Designer | Python Enthusiast</div>
+    <p>I build modern, responsive websites and user-friendly applications. I’m passionate about coding, designing, and turning ideas into digital reality.</p>
+    <a class="button" href="resume.html">📄 View My Resume</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Divya Garapati</p>
+  </footer>
+</body>
+</html>
+
+ 

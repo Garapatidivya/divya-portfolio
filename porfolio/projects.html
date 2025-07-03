@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects - Divya Garapati</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Full-page layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make main content take all available space */
+main, .hero {
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4CAF50;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  background: linear-gradient(to right, #2f19d2,#2c6eb9,#13b2d2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: logoFade 1.5s ease-in-out;
+}
+
+.logo span {
+  color: #1B5E20;
+  font-style: italic;
+  font-weight: 900;
+}
+
+@keyframes logoFade {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+/* Main Sections */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+.projects-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 32px;
+      color: #4CAF50;
+      margin-bottom: 30px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .project-title {
+      font-size: 20px;
+      color: #2e7d32;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .project-desc {
+      font-size: 15px;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .project-links a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      background-color: #4CAF50;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .project-links a:hover {
+      background-color: #2e7d32;
+    }
+
+    @media (max-width: 600px) {
+      .projects-section h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+   <a href="index.html" class="logo">DIV<span>YA</span></a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ <main class="projects-section">
+    <h2>My Projects 🚀</h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-title">🎭 Facial Emotion Detection</div>
+        <div class="project-desc">
+          Built using Python, TensorFlow, and Keras. It identifies 7 different human emotions from facial images. Achieved 73.9% accuracy. Presented at IEEE CVPR conference.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Garapatidivya/Face_emotions" target="_blank">Source Code</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-title">☁️ Weather App</div>
+        <div class="project-desc">
+          Real-time weather updates using OpenWeather API. Created using HTML, CSS, and JavaScript. Features dynamic backgrounds based on weather conditions.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/your-username/weather-app" target="_blank">Source Code</a>
+          <a href="https://yourusername.github.io/weather-app/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-title">💼 Job Portal</div>
+        <div class="project-desc">
+          Full-stack application using Django and MongoDB. Includes job listings, authentication, admin dashboard, and applicant tracking.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/your-username/job-portal" target="_blank">Source Code</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-title">🌐 Personal Portfolio</div>
+        <div class="project-desc">
+          The site you're viewing now! A multi-page, responsive portfolio built with HTML, CSS, and animations. Fully mobile-friendly and recruiter-focused.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/your-username/portfolio" target="_blank">Source Code</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Divya Garapati</p>
+  </footer>
+</body>
+</html>
